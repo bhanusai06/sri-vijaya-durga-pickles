@@ -218,7 +218,7 @@ ul {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--brown);
+  color: #FFD700;
   padding: 8px 14px;
   border-radius: 8px;
   position: relative;
@@ -240,7 +240,7 @@ ul {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--red);
+  color: #ffcc00;
 }
 
 .nav-link:hover::after,
