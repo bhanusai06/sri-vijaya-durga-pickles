@@ -51,16 +51,32 @@ Customers simply click any **"Order Now"** or **"Chat with us Now"** button, and
 
 This website is a static site and can be deployed for free instantly.
 
-### GitHub Pages Deployment
+### GitHub Web & CLI Deployment (Fastest Way)
 
-1. **Push project** to a new GitHub repository (name it `sri-vijaya-durga-pickles`).
-2. Open the repository **Settings**.
-3. Go to the **Pages** tab on the left sidebar.
-4. Under the "Source" dropdown, select **Deploy from Branch**.
-5. Choose the **main** branch and select `/ (root)` folder.
+Since your files are perfectly cleaned and ready, you can deploy in just 3 minutes:
+
+1. Go to **github.com/bhanusai06** and create a NEW, empty repository.
+2. Name the repository exactly: `sri-vijaya-durga-pickles`
+3. Leave all boxes unchecked (Don't add a README or .gitignore). 
+4. Click **Create repository**.
+
+Now, open a terminal (like PowerShell, Command Prompt, or VS Code Terminal) inside your `Downloads\pickles` folder and paste this exact block of commands:
+
+```bash
+git remote add origin https://github.com/bhanusai06/sri-vijaya-durga-pickles.git
+git branch -M main
+git push -u origin main
+```
+
+**To make it live on the internet immediately after pushing:**
+1. Go back to your new GitHub page: `github.com/bhanusai06/sri-vijaya-durga-pickles`
+2. Click on **Settings** (the gear icon at the top right of the repo).
+3. On the left sidebar, click **Pages**.
+4. Under "Build and deployment", change "Source" to **Deploy from a branch**.
+5. Change the Branch dropdown from "None" to **main**, keep the folder as `/ (root)`.
 6. Click **Save**.
 
-Your website will be live at: `https://[USERNAME].github.io/sri-vijaya-durga-pickles`
+Within 1-2 minutes, GitHub will give you a live link at the top of that Settings > Pages screen. Your website is now permanently live!
 
 ### Vercel Deployment
 
