@@ -154,6 +154,36 @@ ul {
   transform: translateY(-4px) scale(1.02);
 }
 
+/* ANNOUNCEMENT BAR */
+.announcement-bar {
+  background: var(--red-dark);
+  color: var(--white);
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1005;
+}
+
+.announcement-bar span {
+  display: inline-block;
+  font-weight: 600;
+  padding-left: 100%;
+  animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -1174,6 +1204,22 @@ ul {
   background: linear-gradient(135deg, var(--orange), #b7440d);
 }
 
+.pc-badge.new {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, #E86A33, #D4380D);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .card-body {
   padding: 20px;
 }
@@ -1244,19 +1290,19 @@ ul {
   background: repeating-linear-gradient(45deg, rgba(200, 150, 12, 0.03) 0px, rgba(200, 150, 12, 0.03) 1px, transparent 1px, transparent 32px);
 }
 
-.specials-section .section-eyebrow {
+.specials-section .section-tag {
   color: var(--gold-light);
 }
 
-.specials-section .section-title {
+.specials-section .section-heading {
   color: var(--cream);
 }
 
-.specials-section .section-title em {
+.specials-section .section-heading em {
   color: var(--gold);
 }
 
-.specials-section .section-desc {
+.specials-section .section-sub {
   color: rgba(245, 230, 176, 0.7);
 }
 
